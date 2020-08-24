@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarmfrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".alarm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="@color/colorPrimary"
+        tools:context=".alaarmsetup">
+
+        <TextClock
+            android:id="@+id/currenttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currenttime"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:timePickerMode="spinner" />
+
+
+        <!--
+        <TextView
+            android:id="@+id/bh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timepicker"
+            android:layout_margin="10dp"
+            android:text="Days"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/grid"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/addalarm"
+            android:layout_below="@id/bh"
+            android:layout_margin="10dp"
+            android:background="@drawable/square"
+            app:columnCount="2">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Monday"
+                android:textColor="@color/colorAccent"
+                app:layout_gravity="fill_horizontal" />
+
+            <CheckBox
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/square"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Tuesday"
+                android:textColor="@color/colorAccent"
+                app:layout_gravity="fill_horizontal" />
+
+            <CheckBox
+                android:id="@+id/tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/square"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Wednesday"
+                android:textColor="@color/colorAccent"
+                app:layout_gravity="fill_horizontal" />
+
+            <CheckBox
+                android:id="@+id/wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/square"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Thursday"
+                android:textColor="@color/colorAccent"
+                app:layout_gravity="fill_horizontal" />
+
+            <CheckBox
+                android:id="@+id/thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/square"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Friday"
+                android:textColor="@color/colorAccent"
+                app:layout_gravity="fill_horizontal" />
+
+            <CheckBox
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/square"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Saturday"
+                android:textColor="@color/colorAccent"
+                app:layout_gravity="fill_horizontal" />
+
+            <CheckBox
+                android:id="@+id/saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/square"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Sunday"
+                android:textColor="@color/colorAccent"
+                app:layout_gravity="fill_horizontal" />
+
+            <CheckBox
+                android:id="@+id/sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/square"
+                android:textColor="@color/colorAccent" />
+        </androidx.gridlayout.widget.GridLayout>
+        -->
+
+   <!--     <TextView
+            android:id="@+id/be"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timepicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ringtone"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/ringtoneset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/be"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/square" />
+         android:layout_toRightOf="@id/grid"-->
+        <TextView
+            android:id="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timepicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Vibrate"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <CheckBox
+            android:id="@+id/vibrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/by"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/square"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addalarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/gvf"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_add_alarm_24" />
+            <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/gvf"
+             android:layout_margin="10dp"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"/>
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+             android:id="@+id/alarmmanager"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_toRightOf="@id/gvf"
+             android:layout_margin="10dp"
+             android:src="@drawable/ic_baseline_access_alarms_24" />
+
+
+    </RelativeLayout>
+</FrameLayout>

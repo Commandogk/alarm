@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="notification"
+    android:textColor="@color/colorAccent"
+    style="@style/TextAppearance.Compat.Notification.Title"
+    android:gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    android:id="@+id/customnoti"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIme"
+        android:textColor="@color/colorAccent"
+        style="@style/TextAppearance.Compat.Notification.Info"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/customnoti"
+        android:background="@android:color/transparent"
+        android:id="@+id/description"/>
+    <View
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/notiview">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/description"
+        android:background="@color/colorPrimary"
+        android:id="@+id/stopring"
+        android:text="STOP"
+        android:textColor="@color/colorAccent"
+        />
+    </View>
+</RelativeLayout>

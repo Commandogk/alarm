@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="ID"
+                android:gravity="center"
+                android:layout_height="30sp"
+                android:textSize="15sp"
+                android:id="@+id/pos"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/Alarm"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="30sp"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                android:layout_toRightOf="@id/pos"
+                android:textColor="@color/colorPrimary"
+                android:text="Alarm :"
+                />
+            <TextView
+                android:id="@+id/Alarmtime"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="30sp"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                android:layout_toRightOf="@id/Alarm"
+                android:textColor="@color/colorPrimary"
+                android:text="Alarm "
+                />
+            <TextView
+                android:id="@+id/vibr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/Alarmtime"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Vibrate"
+                />
+            <CheckBox
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/square"
+                android:layout_margin="5dp"
+                android:id="@+id/vibratee"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorAccent"
+                android:layout_toRightOf="@id/vibr"
+                />
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

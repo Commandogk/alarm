@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">alarm</string>
+    <string name="title_activity_firstpage">firstpage</string>
+    <string name="tab_text_1">Alarm</string>
+    <string name="tab_text_2">StopWatch</string>
+    <string name="tab_text_3">Timer</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string-array name="ringer">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+    </string-array>
+
+</resources>

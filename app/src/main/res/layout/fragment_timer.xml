@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".timer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minuteinput"
+            android:layout_marginTop="90dp"
+            android:layout_toLeftOf="@id/fu"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="00"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:hint="Minutes"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text=":"
+            android:layout_marginTop="90dp"
+            android:textStyle="bold"
+            android:id="@+id/fu"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:layout_toRightOf="@id/fu"
+            android:id="@+id/secondinput"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:hint="Seconds"
+            android:maxLength="2"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/counter"
+            android:layout_centerVertical="true"
+            android:textSize="50sp"
+            android:text="00:00"
+            android:textColor="#0072bc"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="70dp"
+            android:layout_toLeftOf="@id/fab6"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorPrimary"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            app:rippleColor="@color/colorPrimary"
+            android:visibility="invisible"
+            android:enabled="false"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:foregroundTint="@color/colorAccent"
+            android:background="@color/colorPrimary"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_baseline_subdirectory_arrow_left_24" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="70dp"
+            android:layout_toRightOf="@id/fab6"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="50dp"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_baseline_stop_24"/>
+
+    </RelativeLayout>
+</FrameLayout>
